@@ -1,0 +1,12 @@
+.flight-detail {
+    transition: transform 300ms;
+  }
+  
+  .flight-detail.entering {
+    transform: translateX(0);
+  }
+  
+  .flight-detail.exiting {
+    transform: translateX(-100%);
+  }
+  
