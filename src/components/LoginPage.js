@@ -48,7 +48,7 @@ const LoginPage = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                // credentials: 'include',
+                credentials: 'include',
                 body: JSON.stringify({ id: loggedInUser.id }),
             });
 
