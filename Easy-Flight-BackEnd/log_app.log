@@ -1,0 +1,120 @@
+2023-09-03 15:52:46,537 - logger_config - INFO - quried from api: [{'id': 1, 'airline_company': {'id': 1, 'name': 'Air France'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 2, 'name': 'Israel'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 60}, {'id': 2, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 3, 'name': 'France'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 200}, {'id': 3, 'airline_company': {'id': 1, 'name': 'Air France'}, 'origin_country': {'id': 3, 'name': 'France'}, 'destination_country': {'id': 1, 'name': 'UK'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 100}, {'id': 4, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 2, 'name': 'Israel'}, 'destination_country': {'id': 3, 'name': 'France'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 200}, {'id': 5, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 2, 'name': 'Israel'}, 'departure_time': '2024-09-19 12:13', 'landing_time': '2024-10-19 12:13', 'remaining_Tickets': 100}, {'id': 6, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 2, 'name': 'Israel'}, 'destination_country': {'id': 1, 'name': 'UK'}, 'departure_time': '2226-08-01 03:33', 'landing_time': '2226-08-05 08:00', 'remaining_Tickets': 103}, {'id': 7, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 2, 'name': 'Israel'}, 'departure_time': '3025-09-01 18:00', 'landing_time': '3025-10-01 19:00', 'remaining_Tickets': 97}]
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\flight_api.py:59 - get()
+
+
+2023-09-03 15:52:46,870 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:52:46] "GET /flights HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+
+2023-09-03 15:52:47,790 - logger_config - INFO - Fetched all flights
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\facades.py:64 - get_all_flights()
+
+
+2023-09-03 15:52:47,799 - logger_config - INFO - quried from api: [{'id': 1, 'airline_company': {'id': 1, 'name': 'Air France'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 2, 'name': 'Israel'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 60}, {'id': 2, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 3, 'name': 'France'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 200}, {'id': 3, 'airline_company': {'id': 1, 'name': 'Air France'}, 'origin_country': {'id': 3, 'name': 'France'}, 'destination_country': {'id': 1, 'name': 'UK'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 100}, {'id': 4, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 2, 'name': 'Israel'}, 'destination_country': {'id': 3, 'name': 'France'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 200}, {'id': 5, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 2, 'name': 'Israel'}, 'departure_time': '2024-09-19 12:13', 'landing_time': '2024-10-19 12:13', 'remaining_Tickets': 100}, {'id': 6, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 2, 'name': 'Israel'}, 'destination_country': {'id': 1, 'name': 'UK'}, 'departure_time': '2226-08-01 03:33', 'landing_time': '2226-08-05 08:00', 'remaining_Tickets': 103}, {'id': 7, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 2, 'name': 'Israel'}, 'departure_time': '3025-09-01 18:00', 'landing_time': '3025-10-01 19:00', 'remaining_Tickets': 97}]
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\flight_api.py:59 - get()
+
+
+2023-09-03 15:52:48,111 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:52:48] "GET /flights HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+
+2023-09-03 15:52:48,442 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:52:48] "OPTIONS /buy HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+
+2023-09-03 15:52:48,761 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:52:48] "OPTIONS /buy HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+
+2023-09-03 15:52:49,068 - logger_config - INFO - Fetched tickets for customer :9
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\facades.py:532 - get_my_tickets()
+
+
+2023-09-03 15:52:49,069 - logger_config - INFO - User tickets fetched successfully
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\ticket_api.py:43 - get()
+
+
+2023-09-03 15:52:49,375 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:52:49] "GET /buy HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+
+2023-09-03 15:52:49,987 - logger_config - INFO - Fetched tickets for customer :9
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\facades.py:532 - get_my_tickets()
+
+
+2023-09-03 15:52:49,993 - logger_config - INFO - User tickets fetched successfully
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\ticket_api.py:43 - get()
+
+
+2023-09-03 15:52:50,303 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:52:50] "GET /buy HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+
+2023-09-03 15:52:53,267 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:52:53] "OPTIONS /buy HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+
+2023-09-03 15:52:56,033 - logger_config - INFO - Ticket with booking code DM82454 removed successfully
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\facades.py:558 - remove_ticket()
+
+
+2023-09-03 15:52:56,036 - logger_config - INFO - Ticket DM82454 removed successfully
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\ticket_api.py:65 - delete()
+
+
+2023-09-03 15:52:56,039 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:52:56] "DELETE /buy HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+
+2023-09-03 15:53:23,202 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:53:23] "OPTIONS /buy HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+
+2023-09-03 15:53:25,977 - logger_config - INFO - Ticket with booking code KK08547 removed successfully
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\facades.py:558 - remove_ticket()
+
+
+2023-09-03 15:53:25,977 - logger_config - INFO - Ticket KK08547 removed successfully
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\ticket_api.py:65 - delete()
+
+
+2023-09-03 15:53:25,977 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:53:25] "DELETE /buy HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+
+2023-09-03 15:53:43,003 - logger_config - INFO - Fetched all flights
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\facades.py:64 - get_all_flights()
+
+
+2023-09-03 15:53:43,019 - logger_config - INFO - quried from api: [{'id': 1, 'airline_company': {'id': 1, 'name': 'Air France'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 2, 'name': 'Israel'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 99}, {'id': 2, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 3, 'name': 'France'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 200}, {'id': 3, 'airline_company': {'id': 1, 'name': 'Air France'}, 'origin_country': {'id': 3, 'name': 'France'}, 'destination_country': {'id': 1, 'name': 'UK'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 100}, {'id': 4, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 2, 'name': 'Israel'}, 'destination_country': {'id': 3, 'name': 'France'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 200}, {'id': 5, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 2, 'name': 'Israel'}, 'departure_time': '2024-09-19 12:13', 'landing_time': '2024-10-19 12:13', 'remaining_Tickets': 100}, {'id': 6, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 2, 'name': 'Israel'}, 'destination_country': {'id': 1, 'name': 'UK'}, 'departure_time': '2226-08-01 03:33', 'landing_time': '2226-08-05 08:00', 'remaining_Tickets': 103}, {'id': 7, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 2, 'name': 'Israel'}, 'departure_time': '3025-09-01 18:00', 'landing_time': '3025-10-01 19:00', 'remaining_Tickets': 100}]
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\flight_api.py:59 - get()
+
+
+2023-09-03 15:53:43,327 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:53:43] "GET /flights HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+
+2023-09-03 15:53:44,244 - logger_config - INFO - Fetched all flights
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\facades.py:64 - get_all_flights()
+
+
+2023-09-03 15:53:44,247 - logger_config - INFO - quried from api: [{'id': 1, 'airline_company': {'id': 1, 'name': 'Air France'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 2, 'name': 'Israel'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 99}, {'id': 2, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 3, 'name': 'France'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 200}, {'id': 3, 'airline_company': {'id': 1, 'name': 'Air France'}, 'origin_country': {'id': 3, 'name': 'France'}, 'destination_country': {'id': 1, 'name': 'UK'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 100}, {'id': 4, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 2, 'name': 'Israel'}, 'destination_country': {'id': 3, 'name': 'France'}, 'departure_time': '2023-08-23 20:33', 'landing_time': '2023-08-23 22:33', 'remaining_Tickets': 200}, {'id': 5, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 2, 'name': 'Israel'}, 'departure_time': '2024-09-19 12:13', 'landing_time': '2024-10-19 12:13', 'remaining_Tickets': 100}, {'id': 6, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 2, 'name': 'Israel'}, 'destination_country': {'id': 1, 'name': 'UK'}, 'departure_time': '2226-08-01 03:33', 'landing_time': '2226-08-05 08:00', 'remaining_Tickets': 103}, {'id': 7, 'airline_company': {'id': 2, 'name': 'El Al'}, 'origin_country': {'id': 1, 'name': 'UK'}, 'destination_country': {'id': 2, 'name': 'Israel'}, 'departure_time': '3025-09-01 18:00', 'landing_time': '3025-10-01 19:00', 'remaining_Tickets': 100}]
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\flight_api.py:59 - get()
+
+
+2023-09-03 15:53:44,551 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:53:44] "GET /flights HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+
+2023-09-03 15:53:45,587 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:53:45] "OPTIONS /logout HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+
+2023-09-03 15:53:45,908 - logger_config - ERROR - 'login_token'
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\login_api.py:72 - post()
+
+
+2023-09-03 15:53:45,909 - werkzeug - INFO - 127.0.0.1 - - [03/Sep/2023 15:53:45] "POST /logout HTTP/1.1" 200 -
+C:\Users\ayoni\Desktop\backend\Easy-Flight-BackEnd\.venv\lib\site-packages\werkzeug\_internal.py:187 - _log()
+
+

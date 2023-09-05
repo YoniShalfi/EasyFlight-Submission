@@ -1,0 +1,146 @@
+api end points:
+
+Facade Base:
+
+get - all flights - http://127.0.0.1:5000/flights
+get - flight by id - http://127.0.0.1:5000/flights/4  - 4 stands for flight id example
+get - flight by params:
+one param - http://127.0.0.1:5000/flights/parameters?origin_country__name=UK
+two params - http://127.0.0.1:5000/flights/parameters?origin_country__name=UK&destination_country__name=Israel
+
+get - all airlines - http://127.0.0.1:5000/airline
+get - air line by id - http://127.0.0.1:5000/airline/2 - 2 stands for flight id example
+
+get - all countries - http://127.0.0.1:5000/country
+get - country by id - http://127.0.0.1:5000/country/2 - 2 stands for country id example
+
+post - create new user - http://127.0.0.1:5000/createUser
+json example:
+{
+    "username": "username-api ",
+    "password": "password-api",
+    "email": "email@api.com"
+}
+role will be set to 2 (User) by defualt, if you need to create other role you can provide it in the json:
+{
+    "username": "admin-api ",
+    "password": "admin-password-api",
+    "email": "admin@api.com",
+    "user_role_id": 1
+}
+
+
+
+Anonymous Facade: 
+
+post - login - http://127.0.0.1:5000/login 
+json for login:
+{
+"username": "<username> ",
+"password": "<password>"
+}
+
+get - login - http://127.0.0.1:5000/login - returns the login token
+
+post - logout - http://127.0.0.1:5000/logout - returns null if there is no user logged in
+
+post - add customer - http://127.0.0.1:5000/customers - if the username provided exist the method creats only customer, else the method creates user and customer
+json example:
+{
+    "first_name": "x",
+    "last_name": "x",
+    "address": "x",
+    "phone_no": "054-7383-099",
+    "credit_card_num": "9890-1410-8895-5599",
+    "username": "x",
+    "password": "x",
+    "email": "x@email.com"
+}
+
+
+
+Administrator Facade: 
+*** NEED TO BE LOGGED IN WITH ADMIN USER ***
+
+get - all customers - http://127.0.0.1:5000/customers
+get - customer by id - http://127.0.0.1:5000/customers/3 -  3 stands for customer id example
+
+post - add airline - http://127.0.0.1:5000/airline
+json example:
+{
+"name": "air line name",
+"country_id": <country id>
+}
+
+delete - remove air line - http://127.0.0.1:5000/airline/3 - 3 stands for airline id example
+
+delete - remove customer (and user) - http://127.0.0.1:5000/customers/14 - 14 stands for airline id example
+
+
+Customer Facade: 
+*** NEED TO BE LOGGED IN WITH CUSTOMER USER ***
+
+put - update customer - http://127.0.0.1:5000/customers
+json will include the wanted fieldes to update, for example:
+{
+  "first_name": "name",
+  "credit_card_no": "4896-8852-5511-5589"
+}
+
+post - add ticket - http://127.0.0.1:5000/buy
+json example:
+{
+  "flight_id": 1, 
+  "tickets_number": 3,
+  "credit_card": "1111-2222-3333-4444"
+}
+
+delete - remove ticket - http://127.0.0.1:5000/buy
+json example:
+{
+  "booking_code": "SX99626"
+}
+
+get - get my tickets - http://127.0.0.1:5000/buy
+
+
+
+AirLine Facade:
+*** NEED TO BE LOGGED IN WITH AIR LINE COMPANY USER ***
+
+
+put - update airline -  http://127.0.0.1:5000/airline 
+json example:
+{
+  "name": "new name"
+}
+
+post - add flight - http://127.0.0.1:5000/flights
+json example:
+{
+    
+    "origin_country_id": 1,
+    "destination_country_id": 3,
+    "departure_time": "2023-09-19 12:13",
+    "landing_time": "2024-08-19 12:13",
+    "remaining_tickets": 100
+}
+
+ put - update flight - http://127.0.0.1:5000/flights/5 - 5 stands for flight id example
+json example:
+{
+    
+    "origin_country_id": 3,
+    "destination_country_id": 2,
+    "remaining_tickets": 324
+}
+
+
+delete - remove flight - http://127.0.0.1:5000/flights/5
+
+get - get my flights - http://127.0.0.1:5000/flights/airline
+
+
+.
+
+

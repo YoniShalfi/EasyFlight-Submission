@@ -1,0 +1,12 @@
+
+docker mysql: - schemas bot updated!
+docker run -d --name EasyFly-container -e MYSQL_ROOT_PASSWORD=102030 -e MYSQL_DATABASE=EasyFly -p 13306:3306 mysql
+87a79f2146a89b4e808993d4d22732ab6ce88cc5c65b2a58ad8af07461b7c011
+
+
+
+
+azure db - 
+root1
+EasyFlight102030
+

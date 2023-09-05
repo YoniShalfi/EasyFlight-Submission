@@ -1,0 +1,129 @@
+swagger: '2.0'
+info:
+  title: Your API Title
+  description: Your API Description
+  version: '1.0'
+paths:
+  /createUser:
+    post:
+      summary: Create a user
+      responses:
+        '200':
+          description: User created successfully
+      # You can provide request parameters, headers, and examples here
+
+  /flights:
+    get:
+      summary: Get a list of flights
+      responses:
+        '200':
+          description: Successful response
+      # You can provide query parameters, headers, and examples here
+
+  /flights/{flight_id}:
+    get:
+      summary: Get flight details by ID
+      parameters:
+        - name: flight_id
+          in: path
+          required: true
+          type: integer
+      responses:
+        '200':
+          description: Successful response
+      # You can provide headers and examples here
+
+  /flights/parameters:
+    get:
+      summary: Get flights by parameters
+      responses:
+        '200':
+          description: Successful response
+      # You can provide query parameters, headers, and examples here
+
+  /flights/airline:
+    get:
+      summary: Get flights associated with an airline
+      responses:
+        '200':
+          description: Successful response
+      # You can provide headers and examples here
+
+  /airline:
+    get:
+      summary: Get a list of airlines
+      responses:
+        '200':
+          description: Successful response
+      # You can provide query parameters, headers, and examples here
+
+  /airline/{airline_id}:
+    get:
+      summary: Get airline details by ID
+      parameters:
+        - name: airline_id
+          in: path
+          required: true
+          type: integer
+      responses:
+        '200':
+          description: Successful response
+      # You can provide headers and examples here
+
+  /country:
+    get:
+      summary: Get a list of countries
+      responses:
+        '200':
+          description: Successful response
+      # You can provide query parameters, headers, and examples here
+
+  /country/{country_id}:
+    get:
+      summary: Get country details by ID
+      parameters:
+        - name: country_id
+          in: path
+          required: true
+          type: integer
+      responses:
+        '200':
+          description: Successful response
+      # You can provide headers and examples here
+
+  /login:
+    post:
+      summary: Log in to the system
+      responses:
+        '200':
+          description: Logged in successfully
+      # You can provide request parameters, headers, and examples here
+
+  /logout:
+    post:
+      summary: Log out from the system
+      responses:
+        '200':
+          description: Logged out successfully
+      # You can provide request parameters, headers, and examples here
+
+  /customers:
+    get:
+      summary: Get a list of customers
+      responses:
+        '200':
+          description: Successful response
+      # You can provide query parameters, headers, and examples here
+
+  /customers/{customer_id}:
+    get:
+      summary: Get customer details by ID
+      parameters:
+        - name: customer_id
+          in: path
+          required: true
+          type: integer
+      responses:
+        '200':
+          description: Successful response
+      # You can provide headers and examples here
