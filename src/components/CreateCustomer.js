@@ -12,7 +12,7 @@ const CreateCustomer = () => {
 
     const handleAddCustomer = async () => {
         try {
-            const response = await fetch('https://easyflight-prod.azurewebsites.net/customers', {
+            const response = await fetch('https://prod-easyflight-backend.azurewebsites.net/customers', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

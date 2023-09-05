@@ -18,10 +18,10 @@ function FlightByParams() {
   useEffect(() => {
     const fetchCountriesAndAirlines = async () => {
       try {
-        const countriesResponse = await axios.get('https://easyflight-prod.azurewebsites.net/country');
+        const countriesResponse = await axios.get('https://prod-easyflight-backend.azurewebsites.net//country');
         setCountries(countriesResponse.data);
 
-        const airlinesResponse = await axios.get('https://easyflight-prod.azurewebsites.net/airline');
+        const airlinesResponse = await axios.get('https://prod-easyflight-backend.azurewebsites.net//airline');
         setAirlines(airlinesResponse.data);
       } catch (error) {
         console.error('Error fetching countries or airlines:', error);
@@ -45,7 +45,7 @@ function FlightByParams() {
         params.airline_company__name = airlineCompany;
       }
 
-      const response = await axios.get('https://easyflight-prod.azurewebsites.net/flights/parameters', { params });
+      const response = await axios.get('https://prod-easyflight-backend.azurewebsites.net//flights/parameters', { params });
       setFlights(response.data);
     } catch (error) {
       console.error('Error fetching flights by parameters:', error);
@@ -54,7 +54,7 @@ function FlightByParams() {
 
   const fetchFlightDetails = async (flightId) => {
     try {
-      const response = await axios.get(`https://easyflight-prod.azurewebsites.net/flights/${flightId}`);
+      const response = await axios.get(`https://prod-easyflight-backend.azurewebsites.net//flights/${flightId}`);
       setSelectedFlight(response.data);
       setShowModal(true);
     } catch (error) {
@@ -153,5 +153,4 @@ function FlightByParams() {
 }
 
 export default FlightByParams;
-
 

@@ -8,7 +8,7 @@ const CreateUserPage = () => {
 
     const handleCreateUser = async () => {
         try {
-            const response = await fetch('https://easyflight-prod.azurewebsites.net/createUser', {
+            const response = await fetch('https://prod-easyflight-backend.azurewebsites.net/createUser', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

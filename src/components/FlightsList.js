@@ -13,7 +13,7 @@ function FlightList() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://easyflight-prod.azurewebsites.net/flights');
+        const response = await axios.get('https://prod-easyflight-backend.azurewebsites.net/flights');
         setFlights(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -25,7 +25,7 @@ function FlightList() {
 
   const fetchFlightDetails = async (flightId) => {
     try {
-      const response = await axios.get(`https://easyflight-prod.azurewebsites.net/flights/${flightId}`);
+      const response = await axios.get(`https://prod-easyflight-backend.azurewebsites.net/flights/${flightId}`);
       setSelectedFlight(response.data);
       setShowModal(true);
     } catch (error) {

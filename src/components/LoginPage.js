@@ -16,7 +16,7 @@ const LoginPage = () => {
     
     const handleLogin = async () => {
         try {
-            const response = await fetch('https://easyflight-prod.azurewebsites.net/login', {
+            const response = await fetch('https://prod-easyflight-backend.azurewebsites.net/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -42,14 +42,15 @@ const LoginPage = () => {
     };
     
     const handleLogout = async () => {
-        try {
-            const response = await fetch('https://easyflight-prod.azurewebsites.net/logout', {
+        // try {
+            console.log('body',{ id: loggedInUser.id, login_token: loggedInUser })
+            const response = await fetch('https://prod-easyflight-backend.azurewebsites.net/logout', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                credentials: 'include',
-                body: JSON.stringify({ id: loggedInUser.id }),
+                // credentials: 'include',
+                body: JSON.stringify({ id: loggedInUser.id, login_token: loggedInUser }),
             });
 
             if (response.status === 200 || response.status === 410) {
@@ -58,9 +59,9 @@ const LoginPage = () => {
             } else {
                 console.error('Logout failed');
             }
-        } catch (error) {
-            console.error('Error during logout:', error);
-        }
+       // } catch (error) {
+       //     console.error('Error during logout:', error);
+       //}
     };
 
     return (
